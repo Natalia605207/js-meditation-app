@@ -1,0 +1,66 @@
+body {
+    background-color: linear-gradient(to right, #1da283, #e9cd42);
+    margin: 0;
+}
+
+#container-countdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#countdown {
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 100px;
+    background-color: #e9cd42;
+    background-image: linear-gradient(90deg, #1da283 0%, #e9cd42 100%);
+    color: #FFF;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+}
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+}
+
+#myButton {
+    display: none;
+}
+
+#backArrow {
+    background-color: transparent;
+    border: none;
+    margin-top: 400px;
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+@media all and (max-width: 540px) {
+    #countdown {
+        width: 80%;
+        font-size: 40px;
+    }
+
+    #myButton {
+        display: block;
+        background-color: transparent;
+        border: none;
+        backdrop-filter: blur(5px);
+        border-radius: 50%;
+        padding: 10px;
+    }
+    
+    #backArrow {
+        margin-top: 300px;
+    }
+}
